@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Secrets Integration Console</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Secrets and integrations</p>
+        <h1>Sync external tools without exposing keys.</h1>
+        <p>Use a connected Function and managed Secrets to call third-party APIs from a hosted web app.</p>
+      </section>
+
+      <section class="console">
+        <div class="console-header">
+          <div>
+            <span>Provider</span>
+            <strong>CRM Pipeline</strong>
+          </div>
+          <button id="sync" type="button">Run sync</button>
+        </div>
+        <div class="status-grid">
+          <article>
+            <span>Secret</span>
+            <strong id="secret-state">Checking</strong>
+          </article>
+          <article>
+            <span>Last sync</span>
+            <strong id="last-sync">-</strong>
+          </article>
+          <article>
+            <span>Records</span>
+            <strong id="records">-</strong>
+          </article>
+        </div>
+        <pre id="log">Waiting for integration status...</pre>
+      </section>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
+

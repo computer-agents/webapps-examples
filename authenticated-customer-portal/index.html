@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Authenticated Customer Portal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Auth and database</p>
+          <h1>Customer portal</h1>
+        </div>
+        <button id="refresh" type="button">Refresh</button>
+      </header>
+
+      <section class="grid">
+        <article class="panel">
+          <span class="label">Signed in as</span>
+          <strong id="user-name">Loading...</strong>
+          <p id="user-email">Checking session</p>
+        </article>
+        <article class="panel">
+          <span class="label">Open tickets</span>
+          <strong id="ticket-count">-</strong>
+          <p>Synced from a connected database.</p>
+        </article>
+        <article class="panel">
+          <span class="label">Plan</span>
+          <strong id="plan-name">-</strong>
+          <p>Resolved from customer records.</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="section-title">
+          <h2>Recent tickets</h2>
+          <span id="sync-state">Idle</span>
+        </div>
+        <div class="table" id="tickets"></div>
+      </section>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
+

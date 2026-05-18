@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent Support Portal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Agent runtime</p>
+          <h1>Support answers from your project agent.</h1>
+          <p class="subcopy">Route customer questions to a connected Computer Agents runtime and keep the conversation inside your workspace.</p>
+        </div>
+        <span class="status">Live</span>
+      </section>
+
+      <section class="card">
+        <div class="thread" id="thread">
+          <article class="message incoming">Hi. Ask a question and this portal will call the connected agent runtime.</article>
+        </div>
+        <form class="composer" id="support-form">
+          <input id="question" name="question" autocomplete="off" placeholder="Ask about your order, account, or workspace..." />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
+

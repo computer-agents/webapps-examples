@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Function-backed Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Connected functions</p>
+          <h1>Ops dashboard</h1>
+          <p>Trigger server-side maintenance tasks without exposing credentials in the browser.</p>
+        </div>
+        <button id="rebuild" type="button">Rebuild index</button>
+      </header>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="panel">
+        <div class="title-row">
+          <h2>Activity</h2>
+          <span id="state">Loading</span>
+        </div>
+        <div id="events" class="events"></div>
+      </section>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
+

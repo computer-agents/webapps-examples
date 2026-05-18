@@ -1,0 +1,10 @@
+{
+  "name": "@computer-agents/webapps-examples",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Example Computer Agents web apps.",
+  "scripts": {
+    "check": "node --check agent-support-portal/app.js && node --check authenticated-customer-portal/app.js && node --check function-backed-admin-dashboard/app.js && node --check secrets-integration-console/app.js"
+  }
+}
+

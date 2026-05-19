@@ -23,4 +23,4 @@ Each example is a static app with a clear integration point. You can open `index
 
 The examples intentionally keep secrets and privileged resource access out of browser code. Use Computer Agents Functions for server-side calls that need secrets, database writes, or external provider credentials.
 
-For Node-backed Web Apps, Computer Agents writes `computer-agents.runtime.server.mjs` into the app root and `computer-agents.runtime.browser.mjs` into the public runtime bundle at deploy time. Use those generated modules for connected resource access instead of committing local runtime shims.
+For Node-backed Web Apps, use `computer-agents/runtime/server` from the official SDK for server-side access to connected resources. Browser code should never receive secrets directly; call a Web App route or Function when a workflow needs privileged resource access.
